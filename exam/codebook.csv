@@ -1,0 +1,207 @@
+variable,label,units,type,reference
+molecule_chembl_id,Molecule identifier,,nominal,,
+standard_value,IC50 activity against Glucocorticoid receptor,nM,ratio,,
+lipinski,"Whether the molecule satisfies Lipinski's rule of 5",,bool,,
+is_active,Whether the standard_value is less than 1000 nM,,bool,,
+canonical_smiles,A SMILES string representing the molecule,,nominal,,
+MaxAbsEStateIndex,Returns a tuple of EState indices for the molecule,,ratio,"10.1023/a:1015952613760, 10.1021/ci00028a014"
+MaxEStateIndex,Returns a tuple of EState indices for the molecule,,ratio,"10.1023/a:1015952613760, 10.1021/ci00028a014"
+MinAbsEStateIndex,Returns a tuple of EState indices for the molecule,,ratio,"10.1023/a:1015952613760, 10.1021/ci00028a014"
+MinEStateIndex,Returns a tuple of EState indices for the molecule,,ratio,"10.1023/a:1015952613760, 10.1021/ci00028a014"
+qed,"Quantitative amount of similarity of drugs",,ratio,"10.1038/nchem.1243"
+SPS,,,,,
+MolWt,The average molecular weight,amu,ratio,,
+HeavyAtomMolWt,The average molecular weight ignoring hydrogens,amu,ratio,,
+ExactMolWt,The exact molecular weight,amu,ratio,,
+NumValenceElectrons,The number of valence electrons,,count,,
+MaxPartialCharge,Maximum partial charge,e,ratio,,
+MinPartialCharge,Minimum partial charge,e,ratio,,
+MaxAbsPartialCharge,Maximum absolute partial charge,e,ratio,,
+MinAbsPartialCharge,Minimum absolute partial charge,e,ratio,,
+FpDensityMorgan1,Morgan fingerprint density,,ratio,,
+FpDensityMorgan2,Morgan fingerprint density,,ratio,,
+FpDensityMorgan3,Morgan fingerprint density,,ratio,,
+AvgIpc,,,,,
+BalabanJ,Balaban's J value for a molecule,,ratio,"10.1016/0009-2614(82)80009-2",
+BertzCT,A topological index meant to quantify complexity of molecules,,ratio,"10.1021/ja00402a071",
+Chi0,"From equations (1),(9) and (10) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+Chi0n,"Similar to Hall Kier Chi0v, but uses nVal instead of valence This makes a big difference after we get out of the first row",,ratio,"10.1002/9780470125793.ch9"
+Chi0v,"From equations (5),(9) and (10) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+Chi1,"From equations (1),(11) and (12) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+Chi1n,"Similar to Hall Kier Chi1v, but uses nVal instead of valence.Rev. Comput. Chem. 2:367-422 (1991).",,ratio,"10.1002/9780470125793.ch9"
+Chi1v,"From equations (5),(11) and (12) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+Chi2n,"Similar to Hall Kier Chi2v, but uses nVal instead of valence. This makes a big difference after we get out of the first row.Rev. Comput. Chem. 2:367-422 (1991).",,ratio,"10.1002/9780470125793.ch9"
+Chi2v,"From equations (5),(15) and (16) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+Chi3n,"Similar to Hall Kier Chi3v, but uses nVal instead of valence. This makes a big difference after we get out of the first row.Rev. Comput. Chem. 2:367-422 (1991).",,ratio,"10.1002/9780470125793.ch9"
+Chi3v,"From equations (5),(15) and (16) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+Chi4n,"Similar to Hall Kier Chi4v, but uses nVal instead of valence. This makes a big difference after we get out of the first row.Rev. Comput. Chem. 2:367-422 (1991).",,ratio,"10.1002/9780470125793.ch9"
+Chi4v,"From equations (5),(15) and (16) of Rev. Comp. Chem. vol 2, 367-422, (1991)",,ratio,"10.1002/9780470125793.ch9"
+HallKierAlpha,The Hall-Kier alpha value for a molecule,,ratio,
+Ipc,The information content of the coefficients of the characteristic polynomial of the adjacency matrix of a hydrogen-suppressed graph of a molecule,,ratio,
+Kappa1,Kappa indices are calculated relative to the least branched (linear) and most branched (star) compounds with the same number of atoms as the molecule being investigated,,ratio,"10.1002/9780470125793.ch9"
+Kappa2,Hall-Kier Kappa2 value,,ratio,"10.1002/9780470125793.ch9"
+Kappa3,Hall-Kier Kappa3 value,,ratio,"10.1002/9780470125793.ch9"
+LabuteASA,"Labute's Approximate Surface Area",nm^2,ratio,"10.1016/S1093-3263(00)00068-1"
+PEOE_VSA1,MOE(Molecular Operating Environment) Charge VSA Descriptor 1 (-inf < x < -0.30),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA2,MOE Charge VSA Descriptor 2 (-0.30 <= x < -0.25),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA3,MOE Charge VSA Descriptor 3 (-0.25 <= x < -0.20),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA4,MOE Charge VSA Descriptor 4 (-0.20 <= x < -0.15),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA5,MOE Charge VSA Descriptor 5 (-0.15 <= x < -0.10),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA6,MOE Charge VSA Descriptor 6 (-0.10 <= x < -0.05),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA7,MOE Charge VSA Descriptor 7 (-0.05 <= x < 0.00),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA8,MOE Charge VSA Descriptor 8 ( 0.00 <= x < 0.05),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA9,MOE Charge VSA Descriptor 9 ( 0.05 <= x < 0.10),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA10,MOE Charge VSA Descriptor 10,,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA11,MOE Charge VSA Descriptor 11 ( 0.15 <= x < 0.20),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA12,MOE Charge VSA Descriptor 12 ( 0.20 <= x < 0.25),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA13,MOE Charge VSA Descriptor 13 ( 0.25 <= x < 0.30),,ratio,"10.1016/0040-4020(80)80168-2"
+PEOE_VSA14,MOE Charge VSA Descriptor 14 ( 0.30 <= x < inf),,ratio,"10.1016/0040-4020(80)80168-2"
+SMR_VSA1,MOE MR VSA Descriptor 1 (-inf < x < 1.29),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA2,MOE MR VSA Descriptor 2 ( 1.29 <= x < 1.82),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA3,MOE MR VSA Descriptor 3 ( 1.82 <= x < 2.24),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA4,MOE MR VSA Descriptor 4 ( 2.24 <= x < 2.45),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA5,MOE MR VSA Descriptor 5 ( 2.45 <= x < 2.75),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA6,MOE MR VSA Descriptor 6 ( 2.75 <= x < 3.05),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA7,MOE MR VSA Descriptor 7 ( 3.05 <= x < 3.63),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA8,MOE MR VSA Descriptor 8 ( 3.63 <= x < 3.80),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA9,MOE MR VSA Descriptor 9 ( 3.80 <= x < 4.00),,ratio,"10.1016/S1093-3263(00)00068-1"
+SMR_VSA10,MOE MR VSA Descriptor 10,,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA1,MOE logP VSA Descriptor 1 (-inf < x < -0.40),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA2,MOE logP VSA Descriptor 2 (-0.40 <= x < -0.20),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA3,MOE logP VSA Descriptor 3 (-0.20 <= x < 0.00),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA4,MOE logP VSA Descriptor 4 ( 0.00 <= x < 0.10),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA5,MOE logP VSA Descriptor 5 ( 0.10 <= x < 0.15),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA6,MOE logP VSA Descriptor 6 ( 0.15 <= x < 0.20),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA7,MOE logP VSA Descriptor 7 ( 0.20 <= x < 0.25),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA8,MOE logP VSA Descriptor 8 ( 0.25 <= x < 0.30),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA9,MOE logP VSA Descriptor 9 ( 0.30 <= x < 0.40),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA10,MOE logP VSA Descriptor 10 ( 0.40 <= x < 0.50),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA11,MOE logP VSA Descriptor 11 ( 0.50 <= x < 0.60),,ratio,"10.1016/S1093-3263(00)00068-1"
+SlogP_VSA12,MOE logP VSA Descriptor 12 ( 0.60 <= x < inf),,ratio,"10.1016/S1093-3263(00)00068-1"
+TPSA,The polar surface area (PSA) or topological polar surface area (TPSA),nm^2,ratio,
+EState_VSA1,EState VSA  Descriptor 1 (-inf < x < -0.39),,ratio,"10.1002/qsar.19910100108"
+EState_VSA2,EState VSA  Descriptor 2 ( -0.39 <= x < 0.29),,ratio,"10.1002/qsar.19910100108"
+EState_VSA3,EState VSA  Descriptor 3 ( 0.29 <= x < 0.72),,ratio,"10.1002/qsar.19910100108"
+EState_VSA4,EState VSA  Descriptor 4 ( 0.72 <= x < 1.17),,ratio,"10.1002/qsar.19910100108"
+EState_VSA5,EState VSA  Descriptor 5 ( 1.17 <= x < 1.54),,ratio,"10.1002/qsar.19910100108"
+EState_VSA6,EState VSA  Descriptor 6 ( 1.54 <= x < 1.81),,ratio,"10.1002/qsar.19910100108"
+EState_VSA7,EState VSA Descriptor 7 ( 1.81 <= x < 2.05),,ratio,"10.1002/qsar.19910100108"
+EState_VSA8,EState VSA  Descriptor 8 ( 2.05 <= x < 4.69),,ratio,"10.1002/qsar.19910100108"
+EState_VSA9,EState VSA  Descriptor 9 ( 4.69 <= x < 9.17),,ratio,"10.1002/qsar.19910100108"
+EState_VSA10,EState VSA Descriptor 10 ( 9.17 <= x < 15.00),,ratio,"10.1002/qsar.19910100108"
+EState_VSA11,EState VSA Descriptor 11 ( 15.00 <= x < inf),,ratio,"10.1002/qsar.19910100108"
+VSA_EState1,VSA EState Descriptor 1 (-inf < x < 4.78),,ratio,"10.1002/qsar.19910100108"
+VSA_EState2,VSA EState Descriptor 2 ( 4.78 <= x < 5.00),,ratio,"10.1002/qsar.19910100108"
+VSA_EState3,VSA EState Descriptor 3 ( 5.00 <= x < 5.41),,ratio,"10.1002/qsar.19910100108"
+VSA_EState4,VSA EState Descriptor 4 ( 5.41 <= x < 5.74),,ratio,"10.1002/qsar.19910100108"
+VSA_EState5,VSA EState Descriptor 5 ( 5.74 <= x < 6.00),,ratio,"10.1002/qsar.19910100108"
+VSA_EState6,VSA EState Descriptor 6 ( 6.00 <= x < 6.07),,ratio,"10.1002/qsar.19910100108"
+VSA_EState7,VSA EState Descriptor 7 ( 6.07 <= x < 6.45),,ratio,"10.1002/qsar.19910100108"
+VSA_EState8,VSA EState Descriptor 8 ( 6.45 <= x < 7.00),,ratio,"10.1002/qsar.19910100108"
+VSA_EState9,VSA EState Descriptor 9 ( 7.00 <= x < 11.00),,ratio,"10.1002/qsar.19910100108"
+VSA_EState10,VSA EState Descriptor 10 ( 11.00 <= x < inf),,ratio,"10.1002/qsar.19910100108"
+FractionCSP3,"The fraction of C atoms that are $sp^3$ hybridized",,ratio,
+HeavyAtomCount,Number of heavy atoms,,count,
+NHOHCount,Number of NHs and OHs,,count,
+NOCount,Number of Nitrogen and Oxygen atoms,,count,
+NumAliphaticCarbocycles,Number of aliphatic (containing at least one non-aromatic bond) carbocycles,,count,
+NumAliphaticHeterocycles,Number of aliphatic (containing at least one non-aromatic bond) heterocycles,,count,
+NumAliphaticRings,Number of aliphatic (containing at least one non-aromatic bond) rings,,count,
+NumAromaticCarbocycles,The number of aromatic carbocycles,,count,
+NumAromaticHeterocycles,The number of aromatic heterocycles,,count,
+NumAromaticRings,The number of aromatic rings,,count,
+NumHAcceptors,Number of Hydrogen Bond Acceptors,,count,
+NumHDonors,Number of Hydrogen Bond Donors,,count,
+NumHeteroatoms,Number of Heteroatoms,,count,
+NumRotatableBonds,Number of Rotatable Bonds,,count,
+NumSaturatedCarbocycles,Number of saturated carbocycles,,count,
+NumSaturatedHeterocycles,Number of saturated heterocycles,,count,
+NumSaturatedRings,Number of Saturated Rings,,count,
+RingCount,Number of All Rings,,count,
+MolLogP,octanol/water partition coefficient (Wildman-Crippen LogP value),,ratio,"10.1021/ci990307l"
+MolMR,Molar Refractivity (Wildman-Crippen MR value),,ratio,"10.1021/ci990307l"
+fr_Al_COO,Number of aliphatic carboxylic acids,,count,
+fr_Al_OH,Number of aliphatic hydroxyl groups,,count,
+fr_Al_OH_noTert,Number of aliphatic hydroxyl groups excluding tert-OH,,count,
+fr_ArN,Number of N functional groups attached to aromatics,,count,
+fr_Ar_COO,Number of Aromatic carboxylic acide,,count,
+fr_Ar_N,Number of aromatic nitrogens,,count,
+fr_Ar_NH,Number of aromatic amines,,count,
+fr_Ar_OH,Number of aromatic hydroxyl groups,,count,
+fr_COO,Number of carboxylic acids,,count,
+fr_COO2,Number of carboxylic acids,,count,
+fr_C_O,Number of carbonyl O,,count,
+fr_C_O_noCOO,"Number of carbonyl O, excluding COOH",,count,
+fr_C_S,Number of thiocarbonyl,,count,
+fr_HOCCN,Number of C(OH)CCN-Ctert-alkyl or C(OH)CCNcyclic,,count,
+fr_Imine,Number of Imines,,count,
+fr_NH0,Number of Tertiary amines,,count,
+fr_NH1,Number of Secondary amines,,count,
+fr_NH2,Number of Primary amines,,count,
+fr_N_O,Number of hydroxylamine groups,,count,
+fr_Ndealkylation1,Number of XCCNR groups,,count,
+fr_Ndealkylation2,"Number of tert-alicyclic amines (no heteroatoms, not quinine-like bridged N)",,count,
+fr_Nhpyrrole,Number of H-pyrrole nitrogens,,count,
+fr_SH,Number of thiol groups,,count,
+fr_aldehyde,Number of aldehydes,,count,
+fr_alkyl_carbamate,Number of alkyl carbamates (subject to hydrolysis),,count,
+fr_alkyl_halide,Number of alkyl halides,,count,
+fr_allylic_oxid,Number of allylic oxidation sites excluding steroid dienone,,count,
+fr_amide,Number of amides,,count,
+fr_amidine,Number of amidine groups,,count,
+fr_aniline,Number of anilines,,count,
+fr_aryl_methyl,Number of aryl methyl sites for hydroxylation,,count,
+fr_azide,Number of azide groups,,count,
+fr_azo,Number of azo groups,,count,
+fr_barbitur,Number of barbiturate groups,,count,
+fr_benzene,Number of benzene rings,,count,
+fr_benzodiazepine,Number of benzodiazepines with no additional fused rings,,count,
+fr_bicyclic,Number of Bicyclic groups,,count,
+fr_diazo,Number of diazo groups,,count,
+fr_dihydropyridine,Number of dihydropyridines,,count,
+fr_epoxide,Number of epoxide rings,,count,
+fr_ester,Number of esters,,count,
+fr_ether,Number of ether oxygens (including phenoxy),,count,
+fr_furan,Number of furan rings,,count,
+fr_guanido,Number of guanidine groups,,count,
+fr_halogen,Number of halogens,,count,
+fr_hdrzine,Number of hydrazine groups,,count,
+fr_hdrzone,Number of hydrazone groups,,count,
+fr_imidazole,Number of imidazole rings,,count,
+fr_imide,Number of imide groups,,count,
+fr_isocyan,Number of isocyanates,,count,
+fr_isothiocyan,Number of isothiocyanates,,count,
+fr_ketone,Number of ketones,,count,
+fr_ketone_Topliss,"Number of ketones excluding diaryl, a,b-unsat. dienones, heteroatom on Calpha",,count,
+fr_lactam,Number of beta lactams,,count,
+fr_lactone,Number of cyclic esters (lactones),,count,
+fr_methoxy,Number of methoxy groups -OCH3,,count,
+fr_morpholine,Number of morpholine rings,,count,
+fr_nitrile,Number of nitriles,,count,
+fr_nitro,Number of nitro groups,,count,
+fr_nitro_arom,Number of nitro benzene ring substituents,,count,
+fr_nitro_arom_nonortho,Number of non-ortho nitro benzene ring substituents,,count,
+fr_nitroso,"Number of nitroso groups, excluding NO2",,count,
+fr_oxazole,Number of oxazole rings,,count,
+fr_oxime,Number of oxime groups,,count,
+fr_para_hydroxylation,Number of para-hydroxylation sites,,count,
+fr_phenol,Number of phenols,,count,
+fr_phenol_noOrthoHbond,Number of phenolic OH excluding ortho intramolecular Hbond substituents,,count,
+fr_phos_acid,Number of phosphoric acid groups,,count,
+fr_phos_ester,Number of phosphoric ester groups,,count,
+fr_piperdine,Number of piperdine rings,,count,
+fr_piperzine,Number of piperzine rings,,count,
+fr_priamide,Number of primary amides,,count,
+fr_prisulfonamd,Number of primary sulfonamides,,count,
+fr_pyridine,Number of pyridine rings,,count,
+fr_quatN,Number of quarternary nitrogens,,count,
+fr_sulfide,Number of thioether,,count,
+fr_sulfonamd,Number of sulfonamides,,count,
+fr_sulfone,Number of sulfone groups,,count,
+fr_term_acetylene,Number of terminal acetylenes,,count,
+fr_tetrazole,Number of tetrazole rings,,count,
+fr_thiazole,Number of thiazole rings,,count,
+fr_thiocyan,Number of thiocyanates,,count,
+fr_thiophene,Number of thiophene rings,,count,
+fr_unbrch_alkane,Number of unbranched alkanes of at least 4 members (excludes halogenated alkanes),,count,
+fr_urea,Number of urea groups,,count,
